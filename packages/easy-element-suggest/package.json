@@ -1,5 +1,5 @@
 {
-  "name": "easy-suggest",
+  "name": "easy-element-suggest",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "86d99595849d0b3aa6f1a3220be0be8801a8402e"
 }
