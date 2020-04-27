@@ -5,10 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx vue-cli-service build --target lib --name EasyElementUpload src/index.vue"
+    "build": "npx vue build --target lib --name EasyElementUpload src/index.vue"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "gitHead": "86d99595849d0b3aa6f1a3220be0be8801a8402e"
+  "gitHead": "86d99595849d0b3aa6f1a3220be0be8801a8402e",
+  "dependencies": {
+    "lodash-es": "^4.17.15"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2"
+  }
 }
