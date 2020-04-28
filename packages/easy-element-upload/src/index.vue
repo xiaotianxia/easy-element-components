@@ -27,7 +27,7 @@
 
 <script>
     import Cookie from 'js.cookie';
-    import { openUrl } from '../../utils/tools';
+    import { openUrl } from '../../../utils/tools';
     import { map } from 'lodash-es';
 
     export default {
@@ -43,7 +43,7 @@
             // action
             actionUrl: {
                 type: String,
-                default: '/ncrm/file/upload/ext'
+                default: '/file/upload/ext'
             },
 
             // 上传后文件预览的baseUrl，如没有则取previewUrlKey对应值，且认为其是完整路径
@@ -160,7 +160,7 @@
                     this.$message.info(`最多可上传${this.limit}个文件`);
                     return false;
                 }
-                this.headers['UC-CSRF-TOKEN'] = Cookie.get('UC-CSRF-TOKEN');
+                this.headers['**-TOKEN'] = Cookie.get('**-TOKEN');
                 if (this.extroParam) {
                     this.extroParam[this.fileNameKey] = file.name;
                 }
@@ -212,14 +212,14 @@
     };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
     .upload-wrap {
-        ::v-deep .el-upload-list__item {
+        /deep/ .el-upload-list__item {
             outline: none;
         }
 
         &.inline {
-            ::v-deep .el-upload-list {
+            /deep/ .el-upload-list {
                 display: inline-flex;
                 margin-left: 10px;
                 vertical-align: bottom;

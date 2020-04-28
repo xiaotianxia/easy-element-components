@@ -12,23 +12,26 @@
 
 <script>
     export default {
-        name: 'App',
-        components: {
-
-        }
+        name: 'App'
     };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
+    html,
+    body {
+        height: 100%;
+    }
     #app {
         display: flex;
 
         .tabs {
-            width: 300px;
+            width: 240px;
         }
 
         .main {
             margin-left: 20px;
+            padding-left: 20px;
+            border-left: 1px solid #aaa;
         }
     }
 </style>

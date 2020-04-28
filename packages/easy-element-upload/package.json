@@ -12,6 +12,7 @@
   "license": "ISC",
   "gitHead": "86d99595849d0b3aa6f1a3220be0be8801a8402e",
   "dependencies": {
+    "js.cookie": "^0.0.4",
     "lodash-es": "^4.17.15"
   },
   "devDependencies": {

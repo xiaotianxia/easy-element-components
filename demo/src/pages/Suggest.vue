@@ -1,5 +1,5 @@
 <template>
-    <div class="hello">
+    <div>
         <easy-element-suggest
             v-model="formData.name"
             clearable
