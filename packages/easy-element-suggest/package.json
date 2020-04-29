@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "gitHead": "86d99595849d0b3aa6f1a3220be0be8801a8402e",
+  "gitHead": "9de946b02c12050959f1e6c5382f27598f4de99a",
   "dependencies": {
     "lodash-es": "^4.17.15"
   },
