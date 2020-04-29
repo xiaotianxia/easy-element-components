@@ -2,10 +2,10 @@
 | 参数 | 说明 | 类型 | 默认值 |
 | ---- | ---- | ---- | ------ |
 | dao     | api对象     | sbject     |  -     |
-| apiPath     |   接口调用方法的路径   |   string   |        |
-| queryParam    |   搜索内容对应的字段名   |    string  |        |
-| extroParam   |   额外的请求参数   |   object   |        |
-| resPath   |    其他搜索字段  |     object |        |
+| api-path     |   接口调用方法的路径   |   string   |        |
+| query-param    |   搜索内容对应的字段名   |    string  |        |
+| extro-param   |   额外的请求参数   |   object   |        |
+| res-path   |    其他搜索字段  |     object |        |
 | label   | 各选项的显示哪些字段对应的文案，可自定义：用占位符“${}”拼接，如，&quot;abc${name}_de${id}fg&quot;     |   string   |        |
 | disabled    |  是否禁用    |    boolean  |        |
 | placeholder   |   对应option的label   |   string   |        |

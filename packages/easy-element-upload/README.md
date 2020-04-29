@@ -7,7 +7,7 @@
 |   max-size   |  每次上传最大文件 单位M    |   number   |    50  |
 |   disabled   |  是否禁用    |  boolean    |   false   |
 |   multiple   |  是否支持多个    |   boolean   |   true   |
-|    inline  |   已上传文件与按钮是否内联   | boolean     |   false
+|    inline  |   已上传文件列表与按钮是否内联   | boolean     |   false
 |    show-file-list  |   是否显示已上传文件列表   |   boolean   |    true  |
 |    show-loading  |  是否显示loading    |  boolean    |   true   |
 |   file-name-key   |    提交文件时文件名对应的key  |  string    |   'filename'   |
@@ -15,8 +15,8 @@
 |   previewUrlKey   |   上传后返回的预览url对应的key   |    string  |    'viewUrl'  |
 |    accept  |   接受上传的[文件类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)   |   string   |      |
 |   limit   |  最大允许上传个数    |   number   |      |
-|   clear()   |   清空上传你列表   |   方法   |      |
-|   @success   |    每次上传成功后的回调，返回单词上传后端返回值  |   function(res)   |      |
+|   clear()   |   清空上传列表   |   方法   |      |
+|   @success   |    每次上传成功后的回调，返回每次上传后端返回值  |   function(res)   |      |
 |    @change  |     上传成功后回调，返回fileList |  function({fileList})    |      |
 
 
