@@ -1,94 +1,16 @@
 ## 说明
-<table class="lake-table">
-    <tbody>
-        <tr>
-            <td>参数</td>
-            <td>说明</td>
-            <td>类型</td>
-            <td>默认值</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <td>dao</td>
-            <td>dao对象</td>
-            <td>sbject</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>apiPath</td>
-            <td>接口调用方法的路径</td>
-            <td>string</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>queryParam</td>
-            <td>搜索内容对应的字段名</td>
-            <td>string</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>extroParam</td>
-            <td>额外的请求参数</td>
-            <td>object</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>apiPath</td>
-            <td></td>
-            <td>string</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>queryParam</td>
-            <td>搜索内容对应的字段名</td>
-            <td>string</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>resPath</td>
-            <td>其他搜索字段</td>
-            <td>object</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>uniqueKey</td>
-            <td>对应option的唯一标识key</td>
-            <td>string</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>label</td>
-            <td>各选项的显示哪些字段对应的文案，可自定义：用占位符“${}”拼接，如，&quot;abc${name}_de${id}fg&quot;</td>
-            <td>string</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>disabled</td>
-            <td>是否禁用</td>
-            <td>boolean</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>placeholder</td>
-            <td>对应option的label</td>
-            <td>string</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>@change()</td>
-            <td>选择某项后的回调，返回该条数据对应的所有内容</td>
-            <td>function($event)</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>@focus()</td>
-            <td>focus回调，返回事件对象</td>
-            <td>function($event)</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-</table>
+| 参数 | 说明 | 类型 | 默认值 |
+| ---- | ---- | ---- | ------ |
+| dao     | api对象     | sbject     |  -     |
+| apiPath     |   接口调用方法的路径   |   string   |        |
+| queryParam    |   搜索内容对应的字段名   |    string  |        |
+| extroParam   |   额外的请求参数   |   object   |        |
+| resPath   |    其他搜索字段  |     object |        |
+| label   | 各选项的显示哪些字段对应的文案，可自定义：用占位符“${}”拼接，如，&quot;abc${name}_de${id}fg&quot;     |   string   |        |
+| disabled    |  是否禁用    |    boolean  |        |
+| placeholder   |   对应option的label   |   string   |        |
+| @change()   |  选择某项后的回调，返回该条数据对应的所有内容    |  function($event)    |        |
+| @focus()  | focus回调，返回事件对象     |   function($event)   |        |
 
 ## 示例
 ```html
@@ -106,3 +28,6 @@
 >
 </imp-suggest>
 ```
+
+
+
