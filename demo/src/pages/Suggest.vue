@@ -23,7 +23,6 @@
 </template>
 
 <script>
-    // import EasyElementSuggest from '../components/easy-element-suggest/src/index';
     import EasyElementSuggest from '../../../packages/easy-element-suggest/src/index';
     import demoService from '../services/demo';
     
