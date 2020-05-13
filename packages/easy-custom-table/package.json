@@ -1,7 +1,7 @@
 {
-  "name": "el-custom-table",
+  "name": "easy-custom-table",
   "version": "0.0.7",
-  "description": "custom table for el-table",
+  "description": "custom table for original table",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

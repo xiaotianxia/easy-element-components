@@ -27,14 +27,8 @@
     import demoService from '../services/demo';
     
     export default {
-        name: 'HelloWorld',
-
         components: {
             EasyElementSuggest
-        },
-
-        props: {
-            msg: String
         },
 
         data () {

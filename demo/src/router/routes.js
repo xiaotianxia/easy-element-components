@@ -7,4 +7,13 @@ export default [
         path: '/upload',
         component: () => import('../pages/Upload')
     },
+    {
+        path: '/el-custom-table',
+        component: () => import('../pages/ElCustomTable')
+    },
+
+    {
+        path: '/custom-table',
+        component: () => import('../pages/CustomTable')
+    },
 ];

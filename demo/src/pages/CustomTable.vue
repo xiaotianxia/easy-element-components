@@ -1,6 +1,6 @@
 <template>
     <div class="my-table">
-        <el-custom-table
+        <easy-custom-table
             ref="customTable"
             :data="list"
             :config="tableConfig"
@@ -10,23 +10,16 @@
             stripe
             border
         >
-            <el-table-column label="操作" fixed="right">
-                <template slot-scope="scope">
-                    <el-button type="text" @click="onDelete(scope.row)">
-                        删除
-                    </el-button>
-                </template>
-            </el-table-column>
-        </el-custom-table>
+        </easy-custom-table>
     </div>
 </template>
 
 <script>
-    import ElCustomTable from '../../../packages/el-custom-table/src/index';
+    import EasyCustomTable from '../../../packages/easy-custom-table/src/index';
     
     export default {
         components: {
-            ElCustomTable
+            EasyCustomTable
         },
 
         data() {
@@ -34,7 +27,7 @@
                 loading: false,
                 list: [],
                 tableConfig: [
-                    { prop: 'date', label: '日期', fixed: true, width: 100 },
+                    { prop: 'date', label: '日期', width: 100 },
                     { prop: 'name', label: '名称' },
                     { prop: 'province', label: '省份' },
                     { prop: 'city', label: '城市', width: 200 },

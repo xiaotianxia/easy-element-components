@@ -23,7 +23,7 @@
 ## 示例
 ```html
 <imp-upload
-    :action-url="'/marketing-platform/file/upload'"
+    :action-url="'/XX/file/upload'"
     :extro-param="{a: 1}"
     @success="onUploadSuccess"
     @change="onUploadChange"

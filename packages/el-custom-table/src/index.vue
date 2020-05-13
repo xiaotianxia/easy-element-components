@@ -6,6 +6,7 @@
             :config="config"
             :default="defaultColumns"
             :cache-name="cacheName"
+            @hook:mounted="onDialogMounted"
         >
         </el-custom-table-dialog>
 
@@ -48,10 +49,12 @@
         },
 
         methods: {
-            init() {
+            onDialogMounted() {
                 this.$refs.customTableDialog.init();
             }
         },
+
+        
     };
 </script>
 

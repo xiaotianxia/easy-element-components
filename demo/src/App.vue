@@ -2,7 +2,9 @@
     <div id="app">
         <div class="tabs">
             <router-link to="suggest">easy-element-suggest</router-link>  <br>
-            <router-link to="upload">easy-element-upload</router-link> 
+            <router-link to="upload">easy-element-upload</router-link> <br>
+            <router-link to="el-custom-table">el-custom-table</router-link> <br>
+            <router-link to="custom-table">custom-table</router-link> 
         </div>
         <div class="main">
             <router-view :key="$route.fullPath"></router-view>

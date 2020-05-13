@@ -120,6 +120,11 @@
             showLoading: {
                 type: Boolean,
                 default: true
+            },
+
+            tokenName: {
+                type: String,
+                default: ''
             }
         },
 
@@ -160,7 +165,9 @@
                     this.$message.info(`最多可上传${this.limit}个文件`);
                     return false;
                 }
-                this.headers['**-TOKEN'] = Cookie.get('**-TOKEN');
+                if (this.tokenName) {
+                    this.headers[this.tokenName] = Cookie.get(this.tokenName);
+                }
                 if (this.extroParam) {
                     this.extroParam[this.fileNameKey] = file.name;
                 }
