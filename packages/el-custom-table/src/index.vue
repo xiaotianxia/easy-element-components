@@ -14,6 +14,7 @@
             <slot name="prefix"></slot>
 
             <template v-for="item in config">
+                <slot :name="item.prop"></slot>
                 <el-table-column
                     v-if="item.show"
                     :key="item.prop"

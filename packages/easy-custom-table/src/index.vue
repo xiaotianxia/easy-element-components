@@ -11,6 +11,9 @@
         </el-custom-table-dialog>
 
         <table>
+            <colgroup>
+                <col v-for="item in config" :key="item.prop" :width="item.width">
+            </colgroup>
             <thead>
                 <tr>
                     <template v-for="item in config">
@@ -24,7 +27,7 @@
                         <template v-for="(value, key) in item">
                             <td v-if="(find(config, { prop: key }) || {}).show" :key="key">{{ data[index][key]}}</td>
                         </template>
-                        <slot></slot>
+                        <slot :row="item"></slot>
                     </tr>
                 </template>
             </tbody>
@@ -52,17 +55,16 @@
 
         data() {
             return {
-                find
+                find,
             }
         },
 
         methods: {
             onDialogMounted() {
                 this.$refs.customTableDialog.init();
+                console.log(this.$slots)
             }
         },
-
-        
     };
 </script>
 
@@ -90,21 +92,22 @@
             background-color: #fff;
             box-sizing: content-box;
             border-collapse: collapse;
+            font-size: 12px;
+            color: #606266;
 
             th,
             td {
-                height: 40px;
                 text-align: left;
                 text-overflow: ellipsis;
                 vertical-align: middle;
                 border-left: 1px solid #f2f2f2;
                 border-right: 1px solid #f2f2f2;
                 border-bottom: 1px solid #e7e7e7;
-                padding: 2px 18px;
+                padding: 10px;
             }
 
             th {
-                color: #333;
+                color: #909399;
                 white-space: nowrap;
                 font-weight: 700;
                 border-top: 1px solid #e7e7e7;

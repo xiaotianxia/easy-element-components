@@ -10,6 +10,7 @@
             stripe
             border
         >
+        <td prop="name" label="插入">111</td>
         </easy-custom-table>
     </div>
 </template>
@@ -30,8 +31,8 @@
                     { prop: 'date', label: '日期', width: 100 },
                     { prop: 'name', label: '名称' },
                     { prop: 'province', label: '省份' },
-                    { prop: 'city', label: '城市', width: 200 },
-                    { prop: 'address', label: '地址', width: 200, sot: true }, // sot: show-overflow-tooltip属性
+                    { prop: 'city', label: '城市', width: 100 },
+                    { prop: 'address', label: '地址', width: 200},
                     { prop: 'zip', label: '邮编号码', width: 150 },
                 ],
                 defaultColumns: [

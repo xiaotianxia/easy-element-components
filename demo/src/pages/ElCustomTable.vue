@@ -10,6 +10,7 @@
             stripe
             border
         >
+            <el-table-column slot="name" label="插入" prop="city"></el-table-column>
             <el-table-column label="操作" fixed="right">
                 <template slot-scope="scope">
                     <el-button type="text" @click="onDelete(scope.row)">

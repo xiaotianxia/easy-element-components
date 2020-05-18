@@ -30,7 +30,7 @@
 	</el-table-column>
 </el-custom-table>
 ```
-注：可以通过 slot 插入操作列，向前插入加上 slot="prefix"
+注：可以通过 slot 插入操作列，向最前插入加上 slot="prefix", 若要插入某一列前面， slot="该列的prop"
 
 ```js
 data() {
