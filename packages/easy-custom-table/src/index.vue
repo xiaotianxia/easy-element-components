@@ -25,6 +25,7 @@
                 <template v-for="(item, index) in data">
                     <tr :key="index">
                         <template v-for="(value, key) in item">
+                            <slot :name="item.prop" :row="item"></slot>
                             <td v-if="(find(config, { prop: key }) || {}).show" :key="key">{{ data[index][key]}}</td>
                         </template>
                         <slot :row="item"></slot>
